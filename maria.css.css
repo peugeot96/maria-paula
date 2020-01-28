@@ -1,0 +1,151 @@
+body{
+    margin: 0 auto;
+}
+
+
+#maria{
+    
+   
+    background-image: url('./imagenes/mariafondo.jpg');
+    color: beige;
+    width: 100%;
+    
+
+}
+
+/* .camara{
+    display: flex;
+    height: 83px;
+    background-image: url('./imagenes/camara.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center; */
+  
+
+
+
+
+
+.maria-1 h1{
+    font-size: -webkit-xxx-large;
+  
+   
+border: 2px solid #000000;
+
+}
+
+#redes{
+    display: flex;
+   justify-content: space-evenly;
+   position: relative;
+   top: -7px;
+    
+
+}
+.maria-1{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.maria-2{
+    background-image: url('./imagenes/twitter.svg');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    
+
+}
+.maria-3{
+    background-image: url('./imagenes/flickr.svg');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+
+#navegador{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#navegador a{
+font-size: larger;
+}
+
+
+
+#pie{
+    display: flex;
+    background-color: #212124;
+    justify-content: center;
+    color: beige;
+    
+
+}
+
+@media screen and (max-width:1024px) {
+
+
+
+
+}
+
+@media screen and (max-width:768px) {
+
+
+
+}
+
+@media screen and (max-width:480px) {
+.maria-1 h1 { font-size: xx-large;
+
+}
+#maria{ position: fixed;
+    z-index: 1;
+
+}
+
+#container1{
+    position: relative;
+    top: 186px;
+}
+
+#pie{ position: relative; top: 186px; }
+
+}
+
+@media screen and (max-width:375px){
+#maria{
+    max-width:100%;
+    
+}
+#container1{
+    position: relative;
+    top: 186px;
+}
+#pie{ position: relative; top: 186px; }
+
+
+   
+}
+img {
+    max-width: -webkit-fill-available;
+}
+
+
+
+@media screen and (max-width:320px) {
+#maria {
+    display: block;
+    width: 100%;
+
+}
+
+
+.maria-1 h1 {
+    text-align: center;
+}
+}
