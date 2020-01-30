@@ -153,6 +153,10 @@ ul{
     text-align: center;
 }
 
+.menu ol li a {
+    line-height: 30px;
+} 
+
 .menu.is-active{
     left: 0;
     width: 50%;
