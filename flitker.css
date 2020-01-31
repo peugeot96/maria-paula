@@ -228,4 +228,9 @@ img {
 .maria-1 h1 {
     text-align: center;
 }
+
+.burger-button{
+    width: 33px;
+    height: 39px;
+}
 }
