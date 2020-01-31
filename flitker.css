@@ -1,3 +1,34 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('./fonts/icomoon.eot?bqb2fe');
+    src:  url('./fonts/icomoon.eot?bqb2fe#iefix') format('embedded-opentype'),
+      url('./fonts/icomoon.ttf?bqb2fe') format('truetype'),
+      url('./fonts/icomoon.woff?bqb2fe') format('woff'),
+      url('./fonts/icomoon.svg?bqb2fe#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+
 body{
     margin: 0 auto;
 }
@@ -85,6 +116,52 @@ font-size: larger;
     
 
 }
+.burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: beige;
+    background-color:black;
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    
+}
+.menu{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color:beige;
+    color: black;
+    left: -100vw;
+    transition: .3s;
+    z-index: 3;
+
+}
+a,
+ol,
+ul{
+    list-style: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1em;
+    padding-top: 24px;
+    padding: inherit;
+    text-align: center;
+}
+
+.menu ol li a {
+    line-height: 30px;
+} 
+
+.menu.is-active{
+    left: 0;
+    width: 50%;
+
+}
 
 @media screen and (max-width:1024px) {
 
@@ -102,6 +179,9 @@ font-size: larger;
 @media screen and (max-width:480px) {
 .maria-1 h1 { font-size: xx-large;
 
+}
+.icon-menu{
+    display: block;
 }
 #maria{ position: fixed;
     z-index: 1;
@@ -147,5 +227,10 @@ img {
 
 .maria-1 h1 {
     text-align: center;
+}
+
+.burger-button{
+    width: 33px;
+    height: 39px;
 }
 }
