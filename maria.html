@@ -1,15 +1,34 @@
-<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="es">
+<<<<<<< HEAD
 <head> 
+=======
+<head>
+>>>>>>> alternativa
     <meta charset="UTF-8">
  <title>Maria Paula Ruiz </title>
  <link rel="stylesheet" href="flitker.css">
  <link rel="icon" type="image" href="imagenes/favicon.ico">
  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<i class="icon-menu burger-button" id="burger-menu" ></i>
+
+<nav class="menu ">
+<ol>
+<li> 
+    <a class="LINK" href="#Quien Soy?">¿Quien Soy?</a>
+</li>
+<LI>
+    <a href="https://www.flickr.com/photos/137039342@N03/with/34035684915/" target="_blank" >Portafolio</a>
+</LI>
+<li>
+    <a href="https://www.amazon.com/Canon-Mirrorless-Camera-EF-M15-45mm-Video/dp/B079Y45KTJ/ref=sr_1_4?qid=1580311918&refinements=p_89%3ACanon&s=photo&sr=1-4"  target="_blank">Mi Camara</a>
+</li>
+</ol>
 
 
+</nav>
 
 <div id="maria">
     <div class="maria-1"><h1 style="border: solid;"> Maria Paula Ruiz </h1></div>
@@ -81,4 +100,29 @@
 
 
 </footer>
+<script>
+    console.log('hola mundo ');
+    
+
+     const menu =  document.querySelector('.menu');
+     
+     const burgerbutton = document.querySelector('.icon-menu');
+
+      burgerbutton.addEventListener('click', hideShow)
+
+     function hideShow(){
+        
+        if (menu.classList.contains ('is-active')){
+            menu.classList.remove('is-active');
+        } 
+        else{
+
+        menu.classList.add('is-active');
+        }
+        
+     }
+     console.log(burgerbutton)
+
+</script>
+
 </html>
